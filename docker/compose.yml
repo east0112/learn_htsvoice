@@ -1,0 +1,15 @@
+name: learn-htsvoice
+services:
+  ubuntu:
+    build:
+      context: ./ubuntu
+      dockerfile: Dockerfile
+    volumes:
+      - ../src:/app
+    tty: true
+    networks:
+      -  learn-htsvoice
+
+networks:
+  learn-htsvoice:
+    driver: bridge
