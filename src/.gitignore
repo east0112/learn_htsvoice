@@ -1,3 +1,4 @@
 *
 !.gitignore
 !convert_mp3_to_raw.py
+!transcribe_mp3.py

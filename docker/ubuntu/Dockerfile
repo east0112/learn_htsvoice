@@ -28,5 +28,8 @@ RUN apt-get install -y jq
 RUN apt-get install -y sudo
 RUN apt-get install -y unzip
 RUN apt-get install -y bc
+RUN apt-get install -y python3-pip
+
+RUN pip3 install google-cloud-speech pydub
 
 WORKDIR /app
